@@ -21,12 +21,53 @@ body {
   background-size: cover;
 }
 
+.filters_container {
+  position: absolute;
+  background-color: #fff;
+  min-height: 5rem;
+  max-height: fit-content;
+  width: 86%;
+  bottom: -4.5rem;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 0.4rem;
+  box-shadow: 0.4rem 0.6rem 1rem 0.1rem hsla(180, 29%, 50%, 0.2);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters_container #clear {
+  background-color: transparent;
+  border: none;
+  color: hsl(180, 29%, 50%); 
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.filters_container #clear:hover {
+  text-decoration: underline;
+}
+
+.filters_container .filters_list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 main {
   margin: 2rem auto;
   width: 85vw;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.main_filter_on {
+  margin-top: 7rem !important;
 }
 
 @media screen and (max-width: 466px) {

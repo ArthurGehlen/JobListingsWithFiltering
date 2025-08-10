@@ -1,9 +1,15 @@
 import "./ActiveFilter.css";
+import icon_remove from "../assets/icon-remove.svg";
 
-function ActiveFilter({ active_filter_data }) {
-  return <div className="activer_filter">
-    <span></span>
-  </div>;
+function ActiveFilter({ text, handle_delete }) {
+  return (
+    <li className="active_filter">
+      <span>{text}</span>
+      <button onClick={() => handle_delete(text)}>
+        <img src={icon_remove} alt="Remove" />
+      </button>
+    </li>
+  );
 }
 
 export default ActiveFilter;

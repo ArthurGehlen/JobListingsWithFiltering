@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Card.css";
 
-function Card({ card_data }) {
+function Card({ card_data, handle_click }) {
   const [filters, setFilters] = useState([]);
 
   useEffect(() => {
@@ -39,7 +39,7 @@ function Card({ card_data }) {
           <span
             className="filter"
             key={index}
-            onClick={() => console.log(filter)}
+            onClick={() => handle_click(filter)}             
           >
             {filter}
           </span>

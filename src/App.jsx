@@ -11,7 +11,7 @@ function App() {
   const [activeFiltersOn, setActiveFiltersOn] = useState(false);
 
   const fetch_data = () => {
-    fetch("../data.json")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {
         setJsonData(data);

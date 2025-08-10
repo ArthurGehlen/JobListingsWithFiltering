@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 import "./Card.css";
 
 function Card({ card_data, handle_click }) {
@@ -39,7 +40,7 @@ function Card({ card_data, handle_click }) {
           <span
             className="filter"
             key={index}
-            onClick={() => handle_click(filter)}             
+            onClick={() => handle_click(filter)}
           >
             {filter}
           </span>

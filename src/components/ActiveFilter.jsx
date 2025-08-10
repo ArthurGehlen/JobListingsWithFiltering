@@ -1,5 +1,5 @@
-import "./ActiveFilter.css";
 import icon_remove from "../assets/icon-remove.svg";
+import "./ActiveFilter.css";
 
 function ActiveFilter({ text, handle_delete }) {
   return (

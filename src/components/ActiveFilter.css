@@ -1,28 +1,28 @@
 .active_filter {
-    max-height: 2rem;
-    display: flex;
+  max-height: 2rem;
+  display: flex;
 }
 
 .active_filter span {
-    background-color: hsl(180, 52%, 96%);
-    color: hsl(180, 29%, 50%);
-    padding: .6rem;
-    font-weight: 700;
-    border-radius: .4rem 0 0 .4rem;
+  background-color: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  padding: 0.6rem;
+  font-weight: 700;
+  border-radius: 0.4rem 0 0 0.4rem;
 }
 
 .active_filter button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(180, 29%, 50%);
-    padding: .6rem;
-    border: none;
-    border-radius: 0 .4rem .4rem 0;
-    cursor: pointer;
-    transition: .4s ease all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(180, 29%, 50%);
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0 0.4rem 0.4rem 0;
+  cursor: pointer;
+  transition: 0.4s ease all;
 }
 
 .active_filter button:hover {
-    background-color: hsl(180, 14%, 20%);
+  background-color: hsl(180, 14%, 20%);
 }

@@ -1,6 +1,8 @@
-import { use, useEffect, useState } from "react";
-import Card from "./components/Card";
 import ActiveFilter from "./components/ActiveFilter";
+import Card from "./components/Card";
+
+import { useEffect, useState } from "react";
+
 import "./App.css";
 
 function App() {
@@ -46,8 +48,8 @@ function App() {
     activeFilters.length > 0
       ? jsonData.filter((card) => {
           const card_filters = [
-            card.role,
-            card.level,
+            card.role || [],
+            card.level || [],
             ...(card.languages || []),
             ...(card.tools || []),
           ];

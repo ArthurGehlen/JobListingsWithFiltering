@@ -41,7 +41,7 @@ body {
 .filters_container #clear {
   background-color: transparent;
   border: none;
-  color: hsl(180, 29%, 50%); 
+  color: hsl(180, 29%, 50%);
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
